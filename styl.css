@@ -1,0 +1,53 @@
+
+
+.dodaj{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+}
+
+.biblioteczka{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+}
+
+.biblioteczka h1{
+    color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.biblioteczka p{
+    color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navigation{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    position: sticky;
+    background-color: #e6f7ff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.navigation a {
+    color: navy;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+        }
