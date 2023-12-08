@@ -7,22 +7,23 @@
     <title>Biblioteczka</title>
 </head>
 <body>
-
-<div class="navigation">
+<div class="wrapper">
+<header class="navigation">
     <div><a href="#biblioteczka">Biblioteczka</a></div>
     <div><a href="#dodaj">Dodaj książkę</a></div>
 </label>
-</div>
+</header>
 
-<div class="section biblioteczka" id="biblioteczka">
+<main class="section biblioteczka" id="biblioteczka">
     <div class="content">
         <div><h1>Biblioteczka</h1></div>
         <div><p>Dodawaj książki!</p></div>
+        <div class="ksiazki" id="ksiazki"><p><object data="biblioteczka.txt" width=200 height=400 frameborder=0 ></object></p></div>
     </div>
-</div>
+</main>
 
 
-<div class="section dodaj" id="dodaj">
+<main class="section dodaj" id="dodaj">
     <div class="content">
         <h2>Dodaj książkę</h2>
         <p>Podaj tytuł i autora</p>
@@ -36,16 +37,20 @@
 	</form>
 	</div>
     </div>
+</main>
+
 </div>
+
+
 <script>
 
 function target_popup(form) {
-    alert("Książka dodana");
+    alert("Książka jest dodawana");
     const fs = require('fs');
     //let book = <form action="" method="get"></form>
     let book = ('Tytuł: ' + document.getElementById("tytul").value + ', Autor: ' + document.getElementById("autor").value + '\n');
     fs.appendFile("biblioteczka.txt",'book',(err)=>{
-    if(err) throw err
+    if(err) alert("Wystąpił błąd! Spróbuj ponownie");
     });
     alert("Książka dodana");
 }
